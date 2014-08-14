@@ -12,12 +12,12 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
+import org.cytoscape.cyGraph.algorithms.GraphAlgorithmsImpl;
 import org.cytoscape.cyGraph.algorithms.api.DijkstraResult;
 import org.cytoscape.cyGraph.algorithms.api.GraphAlgorithms;
 import org.cytoscape.cyGraph.algorithms.api.WeightFunction;
 import org.cytoscape.cyGraph.centralities.api.Centralities;
 import org.cytoscape.cyGraph.centralities.api.NetworkStatsResults;
-import org.cytoscape.cyGraph.internal.GraphAlgorithmsImpl;
 import org.cytoscape.model.CyEdge;
 import org.cytoscape.model.CyIdentifiable;
 import org.cytoscape.model.CyNetwork;

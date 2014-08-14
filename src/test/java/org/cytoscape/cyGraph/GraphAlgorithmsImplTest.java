@@ -10,6 +10,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Stack;
 
+import org.cytoscape.cyGraph.algorithms.BfsCallback;
+import org.cytoscape.cyGraph.algorithms.GraphAlgorithmsImpl;
 import org.cytoscape.cyGraph.algorithms.api.BellmanFordResult;
 import org.cytoscape.cyGraph.algorithms.api.BfsResult;
 import org.cytoscape.cyGraph.algorithms.api.Callback;
@@ -20,8 +22,6 @@ import org.cytoscape.cyGraph.algorithms.api.HITSResults;
 import org.cytoscape.cyGraph.algorithms.api.MSTResult;
 import org.cytoscape.cyGraph.algorithms.api.PagerankResults;
 import org.cytoscape.cyGraph.algorithms.api.WeightFunction;
-import org.cytoscape.cyGraph.internal.BfsCallback;
-import org.cytoscape.cyGraph.internal.GraphAlgorithmsImpl;
 import org.cytoscape.model.CyEdge;
 import org.cytoscape.model.CyNetwork;
 import org.cytoscape.model.CyNode;
