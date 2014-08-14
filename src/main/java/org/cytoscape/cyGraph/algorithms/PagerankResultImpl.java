@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cytoscape.cyGraph.internal;
+package org.cytoscape.cyGraph.algorithms;
 
 import java.util.Map;
 
@@ -12,13 +12,13 @@ import org.cytoscape.model.CyNode;
  * @author Jimmy
  *
  */
-public class PagerankResultsImpl implements PagerankResults{
+public class PagerankResultImpl implements PagerankResults{
 
 	private Map<CyNode, Integer> nodeIndexMap;
 
 	private double pageranks[];
 	
-	public PagerankResultsImpl(Map<CyNode, Integer> nodeIndexMap, double pageranks[]){
+	public PagerankResultImpl(Map<CyNode, Integer> nodeIndexMap, double pageranks[]){
 		
 		this.nodeIndexMap = nodeIndexMap;
 		this.pageranks = pageranks;

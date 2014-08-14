@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cytoscape.cyGraph.internal;
+package org.cytoscape.cyGraph.algorithms;
 
 import java.util.Map;
 
@@ -12,7 +12,7 @@ import org.cytoscape.model.CyNode;
  * @author Jimmy
  *
  */
-public class HITSResultsImpl implements HITSResults{
+public class HITSResultImpl implements HITSResults{
 
 	private double authority[];
 	
@@ -20,7 +20,7 @@ public class HITSResultsImpl implements HITSResults{
 	
 	private Map<CyNode, Integer> nodeIndexMap;
 	
-	public HITSResultsImpl(double authority[], double hubs[], Map<CyNode, Integer> nodeIndexMap){
+	public HITSResultImpl(double authority[], double hubs[], Map<CyNode, Integer> nodeIndexMap){
 		
 		this.authority = authority;
 		this.hubs = hubs;

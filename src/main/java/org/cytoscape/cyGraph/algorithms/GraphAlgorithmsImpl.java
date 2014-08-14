@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cytoscape.cyGraph.internal;
+package org.cytoscape.cyGraph.algorithms;
 
 import java.util.HashMap;
 import java.util.IdentityHashMap;
@@ -451,7 +451,7 @@ public class GraphAlgorithmsImpl implements GraphAlgorithms {
 				negativeCycle = false;
 		}
 
-		return new BellmanFordStatsImpl(source, nodeToMetaNodeMap,
+		return new BellmanFordResultImpl(source, nodeToMetaNodeMap,
 				negativeCycle);
 	}
 
@@ -502,7 +502,7 @@ public class GraphAlgorithmsImpl implements GraphAlgorithms {
 			if (completed)
 				break;
 		}
-		return new HITSResultsImpl(authority, hubs, nodeIndexMap);
+		return new HITSResultImpl(authority, hubs, nodeIndexMap);
 	}
 
 	private void updateHubValue(CyNetwork network, double tempHubs[],
@@ -682,7 +682,7 @@ public class GraphAlgorithmsImpl implements GraphAlgorithms {
 			}
 		}
 
-		return new PagerankResultsImpl(nodeIndexMap, pageranks);
+		return new PagerankResultImpl(nodeIndexMap, pageranks);
 	}
 
 	private double updateValueForNode(CyNetwork network, CyNode node, double r,

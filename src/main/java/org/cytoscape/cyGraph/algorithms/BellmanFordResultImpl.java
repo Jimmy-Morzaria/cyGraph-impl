@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cytoscape.cyGraph.internal;
+package org.cytoscape.cyGraph.algorithms;
 
 import java.util.Map;
 import java.util.Stack;
@@ -13,7 +13,7 @@ import org.cytoscape.model.CyNode;
  * @author Jimmy
  * 
  */
-public class BellmanFordStatsImpl implements BellmanFordResult{
+public class BellmanFordResultImpl implements BellmanFordResult{
 
 	private Map<CyNode, MetaNode> nodeToMetaNodeMap;
 
@@ -21,7 +21,7 @@ public class BellmanFordStatsImpl implements BellmanFordResult{
 
 	private boolean negativeCycle;
 
-	public BellmanFordStatsImpl(CyNode source,
+	public BellmanFordResultImpl(CyNode source,
 			Map<CyNode, MetaNode> nodeToMetaNodeMap, boolean negativeCycle) {
 
 		this.source = source;

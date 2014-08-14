@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cytoscape.cyGraph.internal;
+package org.cytoscape.cyGraph.algorithms;
 
 import org.cytoscape.cyGraph.algorithms.api.Callback;
 import org.cytoscape.model.CyNode;
